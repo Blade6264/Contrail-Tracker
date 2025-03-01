@@ -1,0 +1,583 @@
+[
+    {
+        "airline_code": "HAL",
+        "flights": [
+            {
+                "date": "20231201",
+                "distance": 51656.2,
+                "contrail": 41.32,
+                "power": 413.25
+            },
+            {
+                "date": "20240301",
+                "distance": 23530.14,
+                "contrail": 20.24,
+                "power": 202.36
+            },
+            {
+                "date": "20240201",
+                "distance": 35920.47,
+                "contrail": 33.05,
+                "power": 330.47
+            },
+            {
+                "date": "20240401",
+                "distance": 56347.11,
+                "contrail": 58.6,
+                "power": 586.01
+            },
+            {
+                "date": "20231101",
+                "distance": 29266.91,
+                "contrail": 29.27,
+                "power": 292.67
+            },
+            {
+                "date": "20240101",
+                "distance": 45064.23,
+                "contrail": 43.26,
+                "power": 432.62
+            },
+            {
+                "date": "20231001",
+                "distance": 45358.78,
+                "contrail": 40.82,
+                "power": 408.23
+            }
+        ]
+    },
+    {
+        "airline_code": "UAL",
+        "flights": [
+            {
+                "date": "20240301",
+                "distance": 1.10060701E+6,
+                "contrail": 880.49,
+                "power": 8804.86
+            },
+            {
+                "date": "20231101",
+                "distance": 1.06664981E+6,
+                "contrail": 917.32,
+                "power": 9173.19
+            },
+            {
+                "date": "20231201",
+                "distance": 959620.13,
+                "contrail": 882.85,
+                "power": 8828.51
+            },
+            {
+                "date": "20231001",
+                "distance": 1.08561237E+6,
+                "contrail": 1129.04,
+                "power": 11290.37
+            },
+            {
+                "date": "20240201",
+                "distance": 945008.31,
+                "contrail": 945.01,
+                "power": 9450.08
+            },
+            {
+                "date": "20240401",
+                "distance": 1.11741744E+6,
+                "contrail": 1072.72,
+                "power": 10727.21
+            },
+            {
+                "date": "20240101",
+                "distance": 1.12629817E+6,
+                "contrail": 1013.67,
+                "power": 10136.68
+            }
+        ]
+    },
+    {
+        "airline_code": "AAL",
+        "flights": [
+            {
+                "date": "20231001",
+                "distance": 1.11555593E+6,
+                "contrail": 892.44,
+                "power": 8924.45
+            },
+            {
+                "date": "20240301",
+                "distance": 1.24500973E+6,
+                "contrail": 1070.71,
+                "power": 10707.08
+            },
+            {
+                "date": "20240101",
+                "distance": 1.13623765E+6,
+                "contrail": 1045.34,
+                "power": 10453.39
+            },
+            {
+                "date": "20231201",
+                "distance": 1.12647036E+6,
+                "contrail": 1171.53,
+                "power": 11715.29
+            },
+            {
+                "date": "20231101",
+                "distance": 983826.05,
+                "contrail": 983.83,
+                "power": 9838.26
+            },
+            {
+                "date": "20240401",
+                "distance": 1.17226403E+6,
+                "contrail": 1125.37,
+                "power": 11253.73
+            },
+            {
+                "date": "20240201",
+                "distance": 1.0657027E+6,
+                "contrail": 959.13,
+                "power": 9591.32
+            }
+        ]
+    },
+    {
+        "airline_code": "DAL",
+        "flights": [
+            {
+                "date": "20231001",
+                "distance": 1.19359748E+6,
+                "contrail": 954.88,
+                "power": 9548.78
+            },
+            {
+                "date": "20231101",
+                "distance": 963406.55,
+                "contrail": 828.53,
+                "power": 8285.3
+            },
+            {
+                "date": "20240401",
+                "distance": 1.06657884E+6,
+                "contrail": 981.25,
+                "power": 9812.53
+            },
+            {
+                "date": "20240301",
+                "distance": 1.03386036E+6,
+                "contrail": 1075.21,
+                "power": 10752.15
+            },
+            {
+                "date": "20240101",
+                "distance": 996418.72,
+                "contrail": 996.42,
+                "power": 9964.19
+            },
+            {
+                "date": "20240201",
+                "distance": 846976.2,
+                "contrail": 813.1,
+                "power": 8130.97
+            },
+            {
+                "date": "20231201",
+                "distance": 912397.4,
+                "contrail": 821.16,
+                "power": 8211.58
+            }
+        ]
+    },
+    {
+        "airline_code": "SWA",
+        "flights": [
+            {
+                "date": "20231001",
+                "distance": 488297.39,
+                "contrail": 390.64,
+                "power": 3906.38
+            },
+            {
+                "date": "20240301",
+                "distance": 647646.86,
+                "contrail": 556.98,
+                "power": 5569.76
+            },
+            {
+                "date": "20240401",
+                "distance": 668774.98,
+                "contrail": 615.27,
+                "power": 6152.73
+            },
+            {
+                "date": "20240101",
+                "distance": 554864.48,
+                "contrail": 577.06,
+                "power": 5770.59
+            },
+            {
+                "date": "20231101",
+                "distance": 579844.03,
+                "contrail": 579.84,
+                "power": 5798.44
+            },
+            {
+                "date": "20231201",
+                "distance": 562128.34,
+                "contrail": 539.64,
+                "power": 5396.43
+            },
+            {
+                "date": "20240201",
+                "distance": 480179.86,
+                "contrail": 432.16,
+                "power": 4321.62
+            }
+        ]
+    },
+    {
+        "airline_code": "ASA",
+        "flights": [
+            {
+                "date": "20240401",
+                "distance": 300857.4,
+                "contrail": 240.69,
+                "power": 2406.86
+            },
+            {
+                "date": "20231001",
+                "distance": 289503.32,
+                "contrail": 248.97,
+                "power": 2489.73
+            },
+            {
+                "date": "20231101",
+                "distance": 267772.17,
+                "contrail": 246.35,
+                "power": 2463.5
+            },
+            {
+                "date": "20240201",
+                "distance": 254171.73,
+                "contrail": 264.34,
+                "power": 2643.39
+            },
+            {
+                "date": "20231201",
+                "distance": 290188.93,
+                "contrail": 290.19,
+                "power": 2901.89
+            },
+            {
+                "date": "20240301",
+                "distance": 261032.73,
+                "contrail": 250.59,
+                "power": 2505.91
+            },
+            {
+                "date": "20240101",
+                "distance": 317706.93,
+                "contrail": 285.94,
+                "power": 2859.36
+            }
+        ]
+    },
+    {
+        "airline_code": "RVF",
+        "flights": [
+            {
+                "date": "20240401",
+                "distance": 631.99,
+                "contrail": 0.51,
+                "power": 5.06
+            },
+            {
+                "date": "20240301",
+                "distance": 2817.24,
+                "contrail": 2.42,
+                "power": 24.23
+            }
+        ]
+    },
+    {
+        "airline_code": "JBU",
+        "flights": [
+            {
+                "date": "20240101",
+                "distance": 367430.19,
+                "contrail": 293.94,
+                "power": 2939.44
+            },
+            {
+                "date": "20240301",
+                "distance": 398289.78,
+                "contrail": 342.53,
+                "power": 3425.29
+            },
+            {
+                "date": "20240201",
+                "distance": 344104.1,
+                "contrail": 316.58,
+                "power": 3165.76
+            },
+            {
+                "date": "20231101",
+                "distance": 337072.92,
+                "contrail": 350.56,
+                "power": 3505.56
+            },
+            {
+                "date": "20231001",
+                "distance": 353586.26,
+                "contrail": 353.59,
+                "power": 3535.86
+            },
+            {
+                "date": "20231201",
+                "distance": 343344.39,
+                "contrail": 329.61,
+                "power": 3296.11
+            },
+            {
+                "date": "20240401",
+                "distance": 408284.29,
+                "contrail": 367.46,
+                "power": 3674.56
+            }
+        ]
+    },
+    {
+        "airline_code": "FFT",
+        "flights": [
+            {
+                "date": "20240101",
+                "distance": 168204.36,
+                "contrail": 134.56,
+                "power": 1345.63
+            },
+            {
+                "date": "20231201",
+                "distance": 125707.34,
+                "contrail": 108.11,
+                "power": 1081.08
+            },
+            {
+                "date": "20240301",
+                "distance": 158912.1,
+                "contrail": 146.2,
+                "power": 1461.99
+            },
+            {
+                "date": "20231101",
+                "distance": 120168.75,
+                "contrail": 124.98,
+                "power": 1249.76
+            },
+            {
+                "date": "20240401",
+                "distance": 142065.07,
+                "contrail": 142.07,
+                "power": 1420.65
+            },
+            {
+                "date": "20240201",
+                "distance": 135653.58,
+                "contrail": 130.23,
+                "power": 1302.27
+            },
+            {
+                "date": "20231001",
+                "distance": 109713.03,
+                "contrail": 98.74,
+                "power": 987.42
+            }
+        ]
+    },
+    {
+        "airline_code": "NKS",
+        "flights": [
+            {
+                "date": "20231001",
+                "distance": 200088.79,
+                "contrail": 160.07,
+                "power": 1600.71
+            },
+            {
+                "date": "20240301",
+                "distance": 214669.77,
+                "contrail": 184.62,
+                "power": 1846.16
+            },
+            {
+                "date": "20231201",
+                "distance": 218595.23,
+                "contrail": 201.11,
+                "power": 2011.08
+            },
+            {
+                "date": "20240201",
+                "distance": 140777.99,
+                "contrail": 146.41,
+                "power": 1464.09
+            },
+            {
+                "date": "20240401",
+                "distance": 206809.66,
+                "contrail": 206.81,
+                "power": 2068.1
+            },
+            {
+                "date": "20231101",
+                "distance": 143443.11,
+                "contrail": 137.71,
+                "power": 1377.05
+            },
+            {
+                "date": "20240101",
+                "distance": 144697.05,
+                "contrail": 130.23,
+                "power": 1302.27
+            }
+        ]
+    },
+    {
+        "airline_code": "MXY",
+        "flights": [
+            {
+                "date": "20240401",
+                "distance": 23885.44,
+                "contrail": 19.11,
+                "power": 191.08
+            },
+            {
+                "date": "20240301",
+                "distance": 18658.39,
+                "contrail": 16.05,
+                "power": 160.46
+            },
+            {
+                "date": "20231201",
+                "distance": 13760.54,
+                "contrail": 12.66,
+                "power": 126.6
+            },
+            {
+                "date": "20240101",
+                "distance": 14555.76,
+                "contrail": 15.14,
+                "power": 151.38
+            },
+            {
+                "date": "20240201",
+                "distance": 17131.02,
+                "contrail": 17.13,
+                "power": 171.31
+            },
+            {
+                "date": "20231101",
+                "distance": 10940.46,
+                "contrail": 10.5,
+                "power": 105.03
+            },
+            {
+                "date": "20231001",
+                "distance": 6842.71,
+                "contrail": 6.16,
+                "power": 61.58
+            }
+        ]
+    },
+    {
+        "airline_code": "SCX",
+        "flights": [
+            {
+                "date": "20240101",
+                "distance": 46288.71,
+                "contrail": 37.03,
+                "power": 370.31
+            },
+            {
+                "date": "20240301",
+                "distance": 49622.7,
+                "contrail": 42.68,
+                "power": 426.76
+            },
+            {
+                "date": "20231101",
+                "distance": 22463.71,
+                "contrail": 20.67,
+                "power": 206.67
+            },
+            {
+                "date": "20240401",
+                "distance": 32893.09,
+                "contrail": 34.21,
+                "power": 342.09
+            },
+            {
+                "date": "20231001",
+                "distance": 28695.99,
+                "contrail": 28.7,
+                "power": 286.96
+            },
+            {
+                "date": "20231201",
+                "distance": 26720.93,
+                "contrail": 25.65,
+                "power": 256.52
+            },
+            {
+                "date": "20240201",
+                "distance": 26157.69,
+                "contrail": 23.54,
+                "power": 235.42
+            }
+        ]
+    },
+    {
+        "airline_code": "VXP",
+        "flights": [
+            {
+                "date": "20240101",
+                "distance": 6958.47,
+                "contrail": 5.57,
+                "power": 55.67
+            },
+            {
+                "date": "20240401",
+                "distance": 12025.11,
+                "contrail": 10.34,
+                "power": 103.42
+            },
+            {
+                "date": "20231201",
+                "distance": 8209.76,
+                "contrail": 7.55,
+                "power": 75.53
+            },
+            {
+                "date": "20231101",
+                "distance": 8732.85,
+                "contrail": 9.08,
+                "power": 90.82
+            },
+            {
+                "date": "20240301",
+                "distance": 9707.18,
+                "contrail": 9.71,
+                "power": 97.07
+            },
+            {
+                "date": "20231001",
+                "distance": 5063.47,
+                "contrail": 4.86,
+                "power": 48.61
+            },
+            {
+                "date": "20240201",
+                "distance": 5255.1,
+                "contrail": 4.73,
+                "power": 47.3
+            }
+        ]
+    }
+]
