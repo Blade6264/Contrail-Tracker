@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useEffect, useState} from "react";
+import React, { useState, useEffect } from "react";
 import {
     Dropdown,
     DropdownTrigger,
@@ -8,55 +8,95 @@ import {
     DropdownSection,
     DropdownItem
 } from "@nextui-org/dropdown";
-import {Card} from "@nextui-org/card";
-import {AirlineDataResponse} from "@/typings/AirlineData";
+import { Card } from "@nextui-org/card";
+import { AirlineDataResponse } from "@/typings/AirlineData";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import {Image} from "@nextui-org/image";
+import { Image } from "@nextui-org/image";
 import airlineDataJson from '@/app/data/total_flight_data.json';
 
 export default function Home() {
-    const [search, setSearch] = useState("")
-    const [data, setData] = useState<AirlineDataResponse | undefined>(undefined)
-    const [graphs, setGraphs] = useState<JSX.Element[]>([])
+    const [search, setSearch] = useState("");
+    const [data, setData] = useState<AirlineDataResponse | undefined>(undefined);
+    const [graphs, setGraphs] = useState<JSX.Element[]>([]);
 
+    // Create a static map of airline names by code (from the original route.ts file)
+    const airlineNames: { [code: string]: string } = {
+        "HAL": "Hawaiian Airlines",
+        "UAL": "United Airlines",
+        "AAL": "American Airlines",
+        "DAL": "Delta Airlines",
+        "SWA": "Southwest Airlines",
+        "ASA": "Alaska Airlines",
+        "RVF": "Redwood Virtual Airlines",
+        "JBU": "JetBlue Airlines",
+        "FFT": "Frontier Airlines",
+        "NKS": "Spirit Airlines",
+        "MXY": "Mexicana Airlines",
+        "SCX": "Sun Country Airlines",
+        "VXP": "Viva Aerobus"
+    };
+
+    // Function to get airline name by code
+    const getAirlineNameByCode = (code: string): string => {
+        return airlineNames[code] || "Unknown";
+    };
+
+    // Process the data directly from the JSON
+    const processAirlineData = (airlineCode: string) => {
+        // Find the airline in the JSON data
+        const airline = airlineDataJson.find(airline => airline.airline_code === airlineCode);
+
+        if (!airline) {
+            setData(undefined);
+            return;
+        }
+
+        // Calculate totals (similar to what was done in the API)
+        const processedData: AirlineDataResponse = {
+            airlineCode: airlineCode,
+            airlineName: getAirlineNameByCode(airlineCode),
+            ContrailCoverageArea: 0,
+            PowerTrapped: 0,
+            EstimatedFlightDistance: 0,
+        };
+
+        // Process each flight's data
+        for (const flight of airline.flights) {
+            processedData.ContrailCoverageArea += flight.contrail;
+            processedData.PowerTrapped += flight.power;
+            processedData.EstimatedFlightDistance += flight.distance;
+        }
+
+        // Round the values to 2 decimal places
+        processedData.ContrailCoverageArea = Math.round(processedData.ContrailCoverageArea * 100) / 100;
+        processedData.PowerTrapped = Math.round(processedData.PowerTrapped * 100) / 100;
+        processedData.EstimatedFlightDistance = Math.round(processedData.EstimatedFlightDistance * 100) / 100;
+
+        // Set the data
+        setData(processedData);
+
+        // Create the graphs
+        const imageNames = ['Est_Contrail_Coverage_', 'Est_Flight_Distance_', 'Est_Power_Trapped_'];
+        const newGraphs: JSX.Element[] = imageNames.map((name, index) => (
+            <div key={`${name}${airlineCode}-${index}`}>
+                <Image
+                    alt="airline"
+                    radius="sm"
+                    src={`../images/graphs/${name}${airlineCode}.png`}
+                    width={250}
+                />
+            </div>
+        ));
+
+        setGraphs(newGraphs);
+    };
+
+    // Trigger data processing when search changes
     useEffect(() => {
-        let tempData: AirlineDataResponse = {} as AirlineDataResponse;
-
-        async function fetchData() {
-            const urlencoded = new URLSearchParams();
-            urlencoded.append("action", "GET_DATA");
-            urlencoded.append("airlineCode", search);
-            const response = await fetch("/api/backend", {
-                method: "POST",
-                body: urlencoded,
-            });
-            if (!response.ok) {
-                setData(undefined);
-                return;
-            }
-            const data = await response.json();
-            setData(data);
-            tempData = data;
+        if (search) {
+            processAirlineData(search);
         }
-
-        async function createGraphs() {
-            const imageNames = ['Est_Contrail_Coverage_', 'Est_Flight_Distance_', 'Est_Power_Trapped_'];
-            const graphs: JSX.Element[] = imageNames.map((name, index) => (
-                <div key={`${name}${tempData.airlineCode}-${index}`}>
-                    <Image
-                        alt="airline"
-                        radius="sm"
-                        src={`../images/graphs/${name}${tempData.airlineCode}.png`}
-                        width={250}
-                    />
-                </div>
-            ));
-            setGraphs(graphs);
-        }
-
-        fetchData().then(() => createGraphs())
-
     }, [search]);
 
     const airlineDropdownItems = airlineDataJson.map((airline) => (
@@ -91,22 +131,24 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    {data != undefined && <div className="mx-auto my-6 grid gap-4 w-full lg:max-w-4xl">
-                        <Card>
-                            <div className="grid gap-2 p-4">
-                                <h2 className="text-xl font-semibold">{data.airlineName}</h2>
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Estimated flight
-                                    distance: {data.EstimatedFlightDistance} km</p>
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Contrail
-                                    Coverage: {data.ContrailCoverageArea} km<sup>2</sup></p>
-                                <p className="text-sm text-gray-500 dark:text-gray-400">Power
-                                    trapped: {data.PowerTrapped} kW</p>
-                                <div className={"flex flex-row items-center justify-center"}>
-                                    {graphs}
+                    {data !== undefined && (
+                        <div className="mx-auto my-6 grid gap-4 w-full lg:max-w-4xl">
+                            <Card>
+                                <div className="grid gap-2 p-4">
+                                    <h2 className="text-xl font-semibold">{data.airlineName}</h2>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400">Estimated flight
+                                        distance: {data.EstimatedFlightDistance} km</p>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400">Contrail
+                                        Coverage: {data.ContrailCoverageArea} km<sup>2</sup></p>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400">Power
+                                        trapped: {data.PowerTrapped} kW</p>
+                                    <div className={"flex flex-row items-center justify-center"}>
+                                        {graphs}
+                                    </div>
                                 </div>
-                            </div>
-                        </Card>
-                    </div>}
+                            </Card>
+                        </div>
+                    )}
                 </div>
                 <Footer/>
             </div>
