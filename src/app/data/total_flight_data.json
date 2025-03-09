@@ -1,6 +1,7 @@
 [
     {
         "airline_code": "HAL",
+        "airline_name": "Hawaiian Airlines",
         "flights": [
             {
                 "date": "20231201",
@@ -48,6 +49,7 @@
     },
     {
         "airline_code": "UAL",
+        "airline_name": "United Airlines",
         "flights": [
             {
                 "date": "20240301",
@@ -95,6 +97,7 @@
     },
     {
         "airline_code": "AAL",
+        "airline_name": "American Airlines",
         "flights": [
             {
                 "date": "20231001",
@@ -142,6 +145,7 @@
     },
     {
         "airline_code": "DAL",
+        "airline_name": "Delta Airlines",
         "flights": [
             {
                 "date": "20231001",
@@ -189,6 +193,7 @@
     },
     {
         "airline_code": "SWA",
+        "airline_name": "Southwest Airlines",
         "flights": [
             {
                 "date": "20231001",
@@ -236,6 +241,7 @@
     },
     {
         "airline_code": "ASA",
+        "airline_name": "Alaska Airlines",
         "flights": [
             {
                 "date": "20240401",
@@ -283,6 +289,7 @@
     },
     {
         "airline_code": "RVF",
+        "airline_name": "Redwood Virtual Airlines",
         "flights": [
             {
                 "date": "20240401",
@@ -300,6 +307,7 @@
     },
     {
         "airline_code": "JBU",
+        "airline_name": "JetBlue Airlines",
         "flights": [
             {
                 "date": "20240101",
@@ -347,6 +355,7 @@
     },
     {
         "airline_code": "FFT",
+        "airline_name": "Frontier Airlines",
         "flights": [
             {
                 "date": "20240101",
@@ -394,6 +403,7 @@
     },
     {
         "airline_code": "NKS",
+        "airline_name": "Spirit Airlines",
         "flights": [
             {
                 "date": "20231001",
@@ -441,6 +451,7 @@
     },
     {
         "airline_code": "MXY",
+        "airline_name": "Mexicana Airlines",
         "flights": [
             {
                 "date": "20240401",
@@ -488,6 +499,7 @@
     },
     {
         "airline_code": "SCX",
+        "airline_name": "Sun Country Airlines",
         "flights": [
             {
                 "date": "20240101",
@@ -535,6 +547,7 @@
     },
     {
         "airline_code": "VXP",
+        "airline_name": "Viva Aerobus",
         "flights": [
             {
                 "date": "20240101",

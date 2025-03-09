@@ -2,8 +2,8 @@
 
 import React, {JSX, SVGProps, useEffect, useMemo, useState} from "react";
 import Nav from "@/components/Nav";
-import {Card, CardFooter, CardHeader} from "@nextui-org/card";
-import {Button, CardBody, Divider, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger} from "@nextui-org/react";
+import {Card, CardHeader} from "@nextui-org/card";
+import {CardBody, Divider} from "@nextui-org/react";
 import {Image} from "@nextui-org/image";
 import Footer from "@/components/Footer";
 import {AirlineDataResponse} from "@/typings/AirlineData";
